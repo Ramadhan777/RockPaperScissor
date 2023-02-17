@@ -67,8 +67,8 @@ const App = () => {
         </div>
 
         <div className="grid grid-cols-3 w-[300px] sm:w-[600px] lg:w-[800px] place-items-center gap-4 sm:gap-0">
-          <div className={`hover:bg-slate-50 hover:cursor-pointer p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center rounded-xl ${playerChoice === "rock" && "bg-slate-50"}`}>
-            <img src={rock} onClick={() => againstCom("rock")} alt="rock" className="w-16 h-12 sm:w-24 sm:h-16 lg:w-28 lg:h-20 " />
+          <div onClick={() => againstCom("rock")} className={`hover:bg-slate-50 hover:cursor-pointer p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center rounded-xl ${playerChoice === "rock" && "bg-slate-50"}`}>
+            <img src={rock}  alt="rock" className="w-16 h-12 sm:w-24 sm:h-16 lg:w-28 lg:h-20 " />
           </div>
           <div></div>
           <div className={`${comChoice === 'rock' && 'p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center bg-slate-50 rounded-xl'}`}>
@@ -77,8 +77,8 @@ const App = () => {
         </div>
 
         <div className="grid grid-cols-3 w-[300px] sm:w-[600px] lg:w-[800px] place-items-center gap-4 sm:gap-0">
-          <div className={`hover:bg-slate-50 hover:cursor-pointer p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center rounded-xl ${playerChoice === "paper" && "bg-slate-50"}`}>
-            <img src={paper} onClick={() => againstCom("paper")} alt="paper" className="w-16 h-20 sm:w-20 sm:h-24 lg:w-24 lg:h-28" />
+          <div onClick={() => againstCom("paper")} className={`hover:bg-slate-50 hover:cursor-pointer p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center rounded-xl ${playerChoice === "paper" && "bg-slate-50"}`}>
+            <img src={paper}  alt="paper" className="w-16 h-20 sm:w-20 sm:h-24 lg:w-24 lg:h-28" />
           </div>
           <div className="result-screen text-white w-[100px] sm:w-[150px] lg:w-[200px] text-center text-2xl sm:text-4xl lg:text-5xl font-bold p-[10px] sm:p-[20px] lg:p-[30px]">VS</div>
           <div className={`${comChoice === 'paper' && 'p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center bg-slate-50 rounded-xl'}`}>
@@ -87,8 +87,8 @@ const App = () => {
         </div>
 
         <div className="grid grid-cols-3 w-[300px] sm:w-[600px] lg:w-[800px] place-items-center gap-4 sm:gap-0">
-          <div className={`hover:bg-slate-50 hover:cursor-pointer p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center rounded-xl ${playerChoice === "scissor" && "bg-slate-50"}`}>
-            <img src={scissor} onClick={() => againstCom("scissor")} alt="scissor" className="w-16 h-20 sm:w-20 sm:h-24 lg:w-24 lg:h-28" />
+          <div onClick={() => againstCom("scissor")} className={`hover:bg-slate-50 hover:cursor-pointer p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center rounded-xl ${playerChoice === "scissor" && "bg-slate-50"}`}>
+            <img src={scissor} alt="scissor" className="w-16 h-20 sm:w-20 sm:h-24 lg:w-24 lg:h-28" />
           </div>
           <div onClick={refreshAction} className="hover:bg-slate-50 p-3 flex w-[100px] sm:w-[120px] lg:w-[150px] justify-center rounded-xl">
             <img src={refresh} alt="refresh button" className="w-16 h-14 sm:w-20 sm:h-18 lg:w-24 lg:h-20" />
